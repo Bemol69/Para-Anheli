@@ -691,3 +691,44 @@ body {
     font-style: italic !important;
     color: var(--rose-soft) !important;
 }
+
+/* =============================================
+   MUSIC BUTTON
+   ============================================= */
+#music-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 9000;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, background 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#music-btn:active {
+    transform: scale(0.9);
+}
+
+#music-btn.playing {
+    animation: spinBtn 4s linear infinite;
+    background: rgba(232, 99, 122, 0.3);
+    border-color: rgba(232, 99, 122, 0.5);
+}
+
+@keyframes spinBtn {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

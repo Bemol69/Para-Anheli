@@ -108,3 +108,39 @@ overlay.addEventListener('click', () => {
         }, 600);
     }
 });
+
+/* =============================================
+   6. MUSIC PLAYER
+   ============================================= */
+const music    = document.getElementById('bg-music');
+const musicBtn = document.getElementById('music-btn');
+let musicStarted = false;
+
+function startMusic() {
+    if (!musicStarted) {
+        music.volume = 0.5;
+        music.play().then(() => {
+            musicStarted = true;
+            musicBtn.classList.add('playing');
+            musicBtn.innerText = '🎵';
+        }).catch(() => {});
+    }
+}
+
+// Arranca la música en el primer toque del usuario
+document.addEventListener('click', startMusic, { once: true });
+document.addEventListener('touchstart', startMusic, { once: true });
+
+// Botón para pausar/reanudar
+musicBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // no dispara startMusic otra vez
+    if (music.paused) {
+        music.play();
+        musicBtn.classList.add('playing');
+        musicBtn.innerText = '🎵';
+    } else {
+        music.pause();
+        musicBtn.classList.remove('playing');
+        musicBtn.innerText = '🔇';
+    }
+});
