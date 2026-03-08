@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para Anheli — Feliz Día de la Mujer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Partículas de fondo -->
+    <div id="particles-container"></div>
+
+    <!-- ===== SECCIÓN 1: HERO ===== -->
+    <main class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="glass-card reveal">
+            <div class="badge-wrap">
+                <span class="badge">✦ 8 de Marzo ✦</span>
+            </div>
+            <h1 class="title">Anheli</h1>
+            <p class="title-sub">Feliz Día de la Mujer, mi amor</p>
+            <p class="subtitle" id="typewriter"></p>
+            <button class="scroll-btn" id="next-btn">
+                <span>Descubre tu sorpresa</span>
+                <span class="arrow-icon">↓</span>
+            </button>
+        </div>
+        <div class="scroll-hint">desliza hacia abajo</div>
+    </main>
+
+    <!-- ===== SECCIÓN 2: VERSÍCULO ===== -->
+    <section class="verse-section">
+        <div class="section-inner reveal">
+            <p class="eyebrow">Palabra de Dios para ti</p>
+            <blockquote class="verse-quote">
+                "Muchas mujeres hicieron el bien,<br>mas tú sobrepasas a todas."
+            </blockquote>
+            <cite class="verse-cite">— Proverbios 31:29</cite>
+        </div>
+        <div class="verse-decoration">
+            <div class="cross-glow"></div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: TEXTO POÉTICO ===== -->
+    <section class="poem-section">
+        <div class="section-inner reveal">
+            <p class="eyebrow">Nuestra historia</p>
+            <h2 class="section-title">Amor que no conoce distancia</h2>
+            <div class="poem-body">
+                <p>Hay kilómetros entre nosotros, pero ninguna distancia logra apagar lo que siento cuando pienso en ti. Cada día que pasa sin verte es un día que aprendo que el amor verdadero no necesita cercanía para ser real.</p>
+                <p>Fuimos puestos el uno para el otro no por casualidad, sino por la mano de Dios. Él nos tejió con el mismo hilo, desde extremos distintos del mapa, para que cuando nos encontráramos supiéramos — sin dudarlo — que éramos el hogar del otro.</p>
+                <p class="poem-highlight">Y si alguna vez la distancia duele, recuerda: Él que separó el mar Rojo no tiene problema en acortar el camino entre tú y yo. Nuestra historia la escribe el autor del universo.</p>
+                <p>Seguimos de pie. Seguimos juntos. Seguimos creyendo. Porque nuestro amor está anclado en algo más grande que nosotros: está anclado en Jesús.</p>
+                <p class="poem-footer-line">Con toda mi alma,</p>
+                <p class="poem-signature">Bryan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 4: GALERÍA 3 FOTOS ===== -->
+    <section class="gallery-section">
+        <div class="section-inner">
+            <p class="eyebrow reveal">Nuestros momentos</p>
+            <h2 class="section-title reveal">Tócame para girarme ✨</h2>
+
+            <div class="cards-grid">
+
+                <!-- Carta 1 -->
+                <div class="flip-card reveal" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="foto1.jpeg" alt="Anheli" class="gallery-img">
+                            <div class="card-shimmer"></div>
+                        </div>
+                        <div class="flip-card-back back-1">
+                            <div class="back-icon">🌸</div>
+                            <h3>Mi lugar favorito</h3>
+                            <p>Es cualquier lugar, siempre y cuando sea contigo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carta 2 -->
+                <div class="flip-card reveal" style="animation-delay:0.15s" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="foto2.jpeg" alt="Anheli" class="gallery-img">
+                            <div class="card-shimmer"></div>
+                        </div>
+                        <div class="flip-card-back back-2">
+                            <div class="back-icon">💌</div>
+                            <h3>Lo que más amo</h3>
+                            <p>Tu sonrisa ilumina incluso los días más grises de mi vida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carta 3 -->
+                <div class="flip-card reveal" style="animation-delay:0.3s" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="foto3.jpg" alt="Anheli" class="gallery-img">
+                            <div class="card-shimmer"></div>
+                        </div>
+                        <div class="flip-card-back back-3">
+                            <div class="back-icon">✝️</div>
+                            <h3>Nuestra fe</h3>
+                            <p>Dios nos unió y ninguna distancia puede separar lo que Él une.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 5: SORPRESA (GATA) ===== -->
+    <section class="surprise-section">
+        <div class="section-inner reveal">
+            <p class="eyebrow">Una visita especial</p>
+            <h2 class="section-title">¿Quién quiere saludarte? 🐾</h2>
+            <button class="scroll-btn surprise-btn" id="pet-btn">
+                <span>🐾 Llamar a la gatita</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 6: CARTA FINAL ===== -->
+    <section class="letter-section">
+        <div class="letter-card reveal">
+            <div class="letter-header">
+                <span class="letter-icon">💌</span>
+                <h2>Para ti, hoy y siempre</h2>
+            </div>
+            <p>Anheli, hoy el mundo celebra a la mujer, pero yo celebro a <em>la</em> mujer — la mía, la única, la que Dios eligió para mi vida. Eres valiente sin saberlo, fuerte sin pretenderlo, y hermosa de maneras que ninguna foto puede capturar.</p>
+            <p>Gracias por elegirme cada día a pesar de la distancia. Gracias por confiar, por orar, por quedarte. Nuestro amor es prueba de que lo que Dios une, ningún obstáculo puede romper.</p>
+            <p class="letter-closing">Con todo mi corazón,</p>
+            <p class="letter-signature">Bryan 🤍</p>
+        </div>
+    </section>
+
+    <!-- ===== OVERLAY GATA ===== -->
+    <div id="cat-overlay">
+        <img src="gata.png" id="cat-img" alt="La gatita">
+        <p id="cat-text">¡Miau! Yo también te quiero 🐱💖</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
